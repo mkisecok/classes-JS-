@@ -53,8 +53,10 @@ class Volume
     
     ourVolume()
     {
-        return Math.round(Math.PI * this.r*this.r*this.h);
+        return (Math.PI * this.r*this.r*this.h).toFixed(4);
     }
 }
 const howMuchCylinder= new Volume(5,5);
 console.log(howMuchCylinder.ourVolume());
+
+console.log('='.repeat(50)+' Task 3');
